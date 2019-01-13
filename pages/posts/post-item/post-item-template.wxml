@@ -1,0 +1,17 @@
+<template name="postItem">
+  <view class='post-container' catchtap="toDetail" data-id="{{postId}}">
+    <view class='post-container_user'>
+      <image src='{{avatar}}'></image>
+      <text>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{imgSrc}}'></image>
+    <text class='post-content'>{{content}}</text>
+    <view class='post-container_footer'>
+      <image src='/images/icon/chat.png'></image>
+      <text>{{collection}}</text>
+      <image src='/images/icon/view.png'></image>
+      <text>{{reading}}</text>
+    </view>
+  </view>
+</template>

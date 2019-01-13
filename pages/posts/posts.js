@@ -1,14 +1,16 @@
 import postsData from '../../mock/posts-data.js'
-// pages/posts/posts.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    swiperImgs:[
+      "/images/wx.png", "/images/vr.png","/images/iqiyi.png"
+    ],
     postList:[]
   },
-
+  toDetail(e) {
+    wx.navigateTo({
+      url: '/pages/posts/post-detail/post-detail?id=' + e.currentTarget.dataset.id
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -19,51 +21,5 @@ Page({
     console.log(this.data.postList) // 与vue不同，引用数据this.postList不行，要用this.data.xxx
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  
 })

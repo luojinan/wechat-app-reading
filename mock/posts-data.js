@@ -11,7 +11,11 @@ var local_database=[
         author:'李白',
         dataTime:'24time',
         detail:'并可以在手机上体验该小程序的实际效果。',
-        postId:1
+        postId:1,
+        music:{
+          url:"https://shimo.im/doc/zGv4lcMWsYYMZqGc",
+          title:'音乐素材1'
+        }
     },
     {
         //按住alt + shift + f可以格式化代码
@@ -26,7 +30,11 @@ var local_database=[
         author:'李白2',
         dataTime:'24time',
         detail:'并可以在手机上体验该小程序的实际效果。',
-        postId:2
+        postId: 2,
+        music: {
+          url: "https://shimo.im/doc/zGv4lcMWsYYMZqGc",
+          title: '音乐素材2'
+        }
     },
     {
         //按住alt + shift + f可以格式化代码
@@ -41,7 +49,11 @@ var local_database=[
         author:'李白3',
         dataTime:'24time',
         detail:'并可以在手机上体验该小程序的实际效果。',
-        postId:3
+        postId: 3,
+        music: {
+          url: "https://shimo.im/doc/zGv4lcMWsYYMZqGc",
+          title: '音乐素材3'
+        }
     },
     {
         //按住alt + shift + f可以格式化代码
@@ -56,7 +68,11 @@ var local_database=[
         author:'李白4',
         dataTime:'24time',
         detail:'并可以在手机上体验该小程序的实际效果。',
-        postId:4
+        postId: 4,
+        music: {
+          url: "https://shimo.im/doc/zGv4lcMWsYYMZqGc",
+          title: '音乐素材4'
+        }
     },
 ]
 module.exports={
